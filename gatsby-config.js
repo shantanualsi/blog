@@ -9,8 +9,7 @@ module.exports = {
   siteMetadata: {
     siteTitle: `Shantanu Alshi`,
     siteTitleAlt: `Shantanu Alshi`,
-    siteUrl: `www.shantanualshi.com`,
-    
+    siteUrl: `https://www.shantanualshi.com`,
   },
   plugins: [
     {
