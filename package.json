@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "minimal-blog",
+  "name": "shantanu-alshi-blog",
   "description": "Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.",
   "version": "1.2.0",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Shantanu Alshi <shantanu.alshi@gmail.com>",
   "license": "MIT",
   "starter-name": "gatsby-starter-minimal-blog",
   "scripts": {
