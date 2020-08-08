@@ -1,7 +1,6 @@
 {
   "private": true,
   "name": "shantanu-alshi-blog",
-  "description": "Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.",
   "version": "1.2.0",
   "author": "Shantanu Alshi <shantanu.alshi@gmail.com>",
   "license": "MIT",
