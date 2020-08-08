@@ -5,6 +5,7 @@ require(`dotenv`).config({
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
+  pathPrefix: "/blog",
   siteMetadata: {
     siteTitle: `Shantanu Alshi`,
     siteTitleAlt: `Shantanu Alshi`,
@@ -41,7 +42,7 @@ module.exports = {
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
-    },
+    },  
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
