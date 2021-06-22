@@ -1,0 +1,38 @@
+html {
+  background-color: #e5e5e5;
+}
+
+.global-wrapper {
+  max-width: 60%;
+  background-color: #fff;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.main-heading {
+  color: #000;
+  font-weight: 700;
+}
+
+.post-list-item h2 {
+  display: inline-block;
+  color: #1d3557;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.post-list-item small {
+  float: right;
+}
+
+.post-list-item {
+  border-bottom: rgb(208, 208, 208) solid 0.1px;
+  padding-bottom: 2rem;
+}
+
+.blog-post h1 {
+  color: #1d3557;
+  font-weight: 500;
+}
+
+/* https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557 */

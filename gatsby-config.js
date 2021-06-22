@@ -1,10 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
-    },
+    title: `Shantanu Alshi`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
@@ -31,6 +27,13 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`,
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
