@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "shantanualshi",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Shantanu's Blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Shantanu Alshi",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -31,6 +31,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-share": "^4.4.0",
     "remark-html-katex": "^3.0.0",
     "remark-math": "^4.0.0",
     "typeface-merriweather": "0.0.72",

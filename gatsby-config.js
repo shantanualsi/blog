@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Shantanu Alshi`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://www.shantanualshi.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `shantanualshi`,
     },
   },
   plugins: [
