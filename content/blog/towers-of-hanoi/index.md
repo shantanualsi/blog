@@ -1,5 +1,4 @@
 ---
-id: 200
 title: Picking apart Towers of Hanoi
 date: 2018-02-24T23:11:12+08:00
 tags:
@@ -56,70 +55,42 @@ Quite simple so far. Let's try to figure out some math.
 
 ### 4. Solving the Recurrence
 
-The first and third line divide the problem into sub-problem that is 1 less than our original problem. Thus, if<img src="//s0.wp.com/latex.php?latex=T_%7Bn%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="T_{n} " title="T_{n} " class="latex" /> is the original problem,  we now have two sub-problems, each<img src="//s0.wp.com/latex.php?latex=T_%7Bn-1%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="T_{n-1} " title="T_{n-1} " class="latex" /> size. The middle step is just some output operation which we will treat as constant time O(1). So, we have-
+The first and third line divide the problem into sub-problem that is 1 less than our original problem. Thus, if $T_{n}$ is the original problem,  we now have two sub-problems, each $T_{n-1}$ size. The middle step is just some output operation which we will treat as constant time $O(1)$ .
 
-<img
-  src="//s0.wp.com/latex.php?latex=T_%7Bn%7D+%3D+%5Cbegin%7Bcases%7D+2T_%7Bn-1%7D+%2B+1%2C+%26+%5Ctext%7Bif+n%5Ctextgreater0%7D+%5C%5C+0+%26+%5Ctext%7Bif+n+%3D+0%7D+%5Cend%7Bcases%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0"
-  alt="T_{n} = &#92;begin{cases} 2T_{n-1} + 1, & &#92;text{if n&#92;textgreater0} &#92;&#92; 0 & &#92;text{if n = 0} &#92;end{cases} "
-  title="T_{n} = &#92;begin{cases} 2T_{n-1} + 1, & &#92;text{if n&#92;textgreater0} &#92;&#92; 0 & &#92;text{if n = 0} &#92;end{cases} "
-  class="latex"
-/>
+So, we have-
+
+$
+x = \begin{cases}
+2\ T_{n-1} + 1 &\text{if } n>0 \\
+0 &\text{if } n=0
+\end{cases}
+$
 
 As per recursion-
 
-<img
-  src="//s0.wp.com/latex.php?latex=T_%7Bn-1%7D+%3D+2T_%7Bn-2%7D+%2B+1+&#038;bg=ffffff&#038;fg=000&#038;s=0"
-  alt="T_{n-1} = 2T_{n-2} + 1 "
-  title="T_{n-1} = 2T_{n-2} + 1 "
-  class="latex"
-/>
+$T_{n-1} = 2\ T_{n-2} + 1$
 
-<img
-  src="//s0.wp.com/latex.php?latex=T_%7Bn%7D+%3D+2+%28+2+T_%7Bn-2%7D+%2B+1%29+%2B+1+&#038;bg=ffffff&#038;fg=000&#038;s=0"
-  alt="T_{n} = 2 ( 2 T_{n-2} + 1) + 1 "
-  title="T_{n} = 2 ( 2 T_{n-2} + 1) + 1 "
-  class="latex"
-/>
-<img
-  src="//s0.wp.com/latex.php?latex=T_%7Bn%7D+%3D+2%5E%7B2%7DT_%7Bn-2%7D+%2B+2+%2B+1+&#038;bg=ffffff&#038;fg=000&#038;s=0"
-  alt="T_{n} = 2^{2}T_{n-2} + 2 + 1 "
-  title="T_{n} = 2^{2}T_{n-2} + 2 + 1 "
-  class="latex"
-/>
-<img
-  src="//s0.wp.com/latex.php?latex=T_%7Bn%7D+%3D+2%5E%7B3%7DT_%7Bn-2%7D+%2B+2%5E%7B2%7D+%2B+2%5E%7B1%7D+%2B+2%5E%7B0%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0"
-  alt="T_{n} = 2^{3}T_{n-2} + 2^{2} + 2^{1} + 2^{0} "
-  title="T_{n} = 2^{3}T_{n-2} + 2^{2} + 2^{1} + 2^{0} "
-  class="latex"
-/>
-<img
-  src="//s0.wp.com/latex.php?latex=T_%7Bn%7D+%3D+2%5E%7Br%7DT_%7Bn-r%7D+%2B%C2%A0+...%C2%A0+%2B+2%5E%7B3%7D+%2B+2%5E%7B2%7D+%2B+2%5E%7B1%7D+%2B+2%5E%7B0%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0"
-  alt="T_{n} = 2^{r}T_{n-r} +  ...  + 2^{3} + 2^{2} + 2^{1} + 2^{0} "
-  title="T_{n} = 2^{r}T_{n-r} +  ...  + 2^{3} + 2^{2} + 2^{1} + 2^{0} "
-  class="latex"
-/>
+$T_{n} = 2(2 T_{n-2} + 1) + 1$
 
-We know the base case<img src="//s0.wp.com/latex.php?latex=T_%7B0%7D+%3D+0+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="T_{0} = 0 " title="T_{0} = 0 " class="latex" /> which comes at<img src="//s0.wp.com/latex.php?latex=r+%3D+n+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="r = n " title="r = n " class="latex" /> .
+$T_{n} = 2^{2}T_{n-2} + 2 + 1$
 
-<img
-  src="//s0.wp.com/latex.php?latex=%5Ctherefore+T_%7Bn%7D+%3D+2%5E%7Bn%7DT_%7Bn%7D%C2%A0%2B%C2%A02%5E%7Bn-1%7DT_%7Bn-1%7D+%2B+...%C2%A0+%2B2%5E%7B3%7DT_%7Bn-3%7D+%2B+2%5E%7B2%7D+%2B+2%5E%7B1%7D+%2B+2%5E%7B0%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0"
-  alt="&#92;therefore T_{n} = 2^{n}T_{n} + 2^{n-1}T_{n-1} + ...  +2^{3}T_{n-3} + 2^{2} + 2^{1} + 2^{0} "
-  title="&#92;therefore T_{n} = 2^{n}T_{n} + 2^{n-1}T_{n-1} + ...  +2^{3}T_{n-3} + 2^{2} + 2^{1} + 2^{0} "
-  class="latex"
-/>
+$T_{n} = 2^{3}T_{n-3} + 2^{2} + 2^{1} + 2^{0}$
+
+In
+
+$T_{n} = 2^{r}T_{n-r} +  ...  + 2^{3} + 2^{2} + 2^{1} + 2^{0}$
+
+We know the base case $T_{0} = 0$ which comes at $r=n$ .
+
+$\therefore T_{n} = 2^{n}T_{n} + 2^{n-1}T_{n-1} + ...  +2^{3}T_{n-3} + 2^{2} + 2^{1} + 2^{0}$
 
 This looks like a Geometric series-
 
-<img
-  src="//s0.wp.com/latex.php?latex=%5Ctherefore+T_%7Bn%7D+%3D+2%5E%7Bn%7D-1+&#038;bg=ffffff&#038;fg=000&#038;s=0"
-  alt="&#92;therefore T_{n} = 2^{n}-1 "
-  title="&#92;therefore T_{n} = 2^{n}-1 "
-  class="latex"
-/>
+$\therefore T_{n} = 2^{n}-1$
 
 And we have a closed form for our recurrence.
 
-As it is obvious from that, the algorithm that we have here runs in<img src="//s0.wp.com/latex.php?latex=%5Ctheta%282%5E%7Bn%7D%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;theta(2^{n}) " title="&#92;theta(2^{n}) " class="latex" /> time.
+As it is obvious from that, the algorithm that we have here runs in $\theta (2^n)$ time.
 
 ---
 
@@ -140,7 +111,7 @@ The graph beside the towers is what get when we draw the transition graph for 2 
 Possible states and graph for 2 discs Towers of Hanoi puzzle
 ![Possible states and graph for 2 discs Towers of Hanoi puzzle](./03-step1.png)
 
-Here's a similar ready-made state space graph for 3 disc Towers of Hanoi puzzle. It is evident that the graph contains 3 nodes for 1 disc, 9 nodes for 2 discs, 27 nodes for 3 discs and so on. In general, the graph contains<img src="//s0.wp.com/latex.php?latex=3%5E%7Bn%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3^{n} " title="3^{n} " class="latex" /> nodes for n discs. It shows all the possible states the game can end up in, with the final states as the end of the vertices of the bigger triangle &#8212; AAA, BBB and CCC wherein all the discs are on a single post.
+Here's a similar ready-made state space graph for 3 disc Towers of Hanoi puzzle. It is evident that the graph contains 3 nodes for 1 disc, 9 nodes for 2 discs, 27 nodes for 3 discs and so on. In general, the graph contains $3^{n}$ nodes for n discs. It shows all the possible states the game can end up in, with the final states as the end of the vertices of the bigger triangle &#8212; AAA, BBB and CCC wherein all the discs are on a single post.
 
 ![State Graph for 3 disc Tower of Hanoi puzzle](./04-state-graph.png)
 
@@ -148,13 +119,13 @@ Here's a similar ready-made state space graph for 3 disc Towers of Hanoi puzzle.
 
 ![Shortest path- Most effecient solution to move all discs from A to C](./05-most-effecient-solution.png)
 
-This isn't just a depiction of states. It is not difficult to determine that the most efficient solution, the one with the fewest steps is the edge of the bigger triangle from the start state to the end state. Here's an example - You got all discs on A, which is AAA. start with moving the smallest one to C, you get CAA and continue along the right edge of the triangle marked as red. You will reach the solution in exactly<img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%7D-1+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n}-1 " title="2^{n}-1 " class="latex" /> steps which is the closed form of our recurrence we obtained!
+This isn't just a depiction of states. It is not difficult to determine that the most efficient solution, the one with the fewest steps is the edge of the bigger triangle from the start state to the end state. Here's an example - You got all discs on A, which is AAA. start with moving the smallest one to C, you get CAA and continue along the right edge of the triangle marked as red. You will reach the solution in exactly $2^{n}-1$ steps which is the closed form of our recurrence we obtained!
 
 #### 5.2 The worst solution
 
 ![Worst solution from AAA to CCC](./06-worst-solution.png)
 
-What's the worst you can do (provided you don't go back to the same state again, in which case its<img src="//s0.wp.com/latex.php?latex=%5Cinfty+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;infty " title="&#92;infty " class="latex" /> ) ?. The answer is to try out all the possible states in the graph before ending up in the winning state. That's equivalent to visiting all<img src="//s0.wp.com/latex.php?latex=3%5E%7Bn%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3^{n} " title="3^{n} " class="latex" /> vertices in our graph exactly once. This is incidentally also the most optimized solution to a constrained Towers of Hanoi problem wherein you are allowed to move discs only to adjacent posts. ie. move from A to C and C to A is illegal.
+What's the worst you can do (provided you don't go back to the same state again -- in which case its $\infty$ ) ?. The answer is to try out all the possible states in the graph before ending up in the winning state. That's equivalent to visiting all $3^n$ vertices in our graph exactly once. This is incidentally also the most optimized solution to a constrained Towers of Hanoi problem wherein you are allowed to move discs only to adjacent posts. ie. move from A to C and C to A is illegal.
 
 ####
 

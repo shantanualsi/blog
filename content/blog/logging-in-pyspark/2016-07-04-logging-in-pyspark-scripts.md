@@ -2,12 +2,6 @@
 title: Logging in PySpark
 date: 2016-07-04T18:54:42+08:00
 author: shantanualshi
-layout: post
-guid: https://shantanualshi.wordpress.com/?p=390
-permalink: /2016/07/04/logging-in-pyspark-scripts/
-categories:
-  - Spark
-  - Tutorials
 tags:
   - logging
   - pyspark

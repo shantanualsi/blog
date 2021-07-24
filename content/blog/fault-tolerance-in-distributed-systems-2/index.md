@@ -1,13 +1,7 @@
 ---
-id: 33
 title: "Fault Tolerance in Distributed Systems: Timing Models"
 date: 2014-10-29T15:04:38+08:00
 author: shantanualshi
-layout: post
-guid: http://shantanualshi.wordpress.com/?p=33
-permalink: /2014/10/29/fault-tolerance-in-distributed-systems-timing-models/
-categories:
-  - Distributed Systems
 tags:
   - Failure
   - Fault Tolerance

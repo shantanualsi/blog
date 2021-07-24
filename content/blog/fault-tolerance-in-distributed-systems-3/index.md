@@ -1,12 +1,7 @@
 ---
-id: 40
 title: "Fault Tolerance in Distributed Systems: Distributed Consensus"
 date: 2014-11-20T01:25:57+08:00
 author: shantanualshi
-layout: post
-guid: http://shantanualshi.wordpress.com/?p=40
-categories:
-  - Distributed Systems
 tags:
   - Fault Tolerance
 ---

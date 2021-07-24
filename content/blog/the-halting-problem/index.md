@@ -1,15 +1,7 @@
 ---
-id: 499
 title: The Halting Problem
 date: 2018-02-18T18:33:18+08:00
 author: shantanualshi
-layout: post
-guid: https://shantanualshi.wordpress.com/?p=499
-permalink: /2018/02/18/the-halting-problem/
-timeline_notification:
-  - "1518950000"
-categories:
-  - Computer Problems
 tags:
   - computers
   - diagonalization
