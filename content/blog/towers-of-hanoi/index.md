@@ -1,12 +1,7 @@
 ---
 title: Picking apart Towers of Hanoi
 date: 2018-02-24T23:11:12+08:00
-tags:
-  - algorithms
-  - computers
-  - problems
-  - recursion
-  - towersofhanoi
+tags: algorithms, computers, problems, recursion, towersofhanoi
 ---
 
 ### 1. Background

@@ -14,13 +14,12 @@ html {
   font-size: 0.7rem;
 }
 
-.main-heading {
-  color: #000;
-  font-weight: 700;
+/* Post List Item on Index page */
+.post-list-item .title-and-tags-container {
+  display: inline-block;
 }
 
 .post-list-item h2 {
-  display: inline-block;
   color: #1d3557;
   font-size: 16px;
   font-weight: 400;
@@ -34,6 +33,16 @@ html {
 .post-list-item {
   border-bottom: rgb(237, 237, 237) solid 0.1px;
   font-weight: 200;
+}
+
+.post-list-item .tags {
+  border-radius: 1px;
+  padding: 2px 6px;
+  font-size: 60%;
+  background-color: #f1faee;
+  color: #457b9d;
+  list-style: none;
+  margin-right: 2%;
 }
 
 .header-wrapper .logo {

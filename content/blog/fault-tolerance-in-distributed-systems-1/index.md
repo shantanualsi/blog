@@ -1,10 +1,7 @@
 ---
 title: "Fault Tolerance in Distributed Systems: Introduction"
 date: 2014-10-28
-tags:
-  - Distributed Systems
-  - Failure
-  - Fault Tolerance
+tags: Distributed Systems, Failure, Fault Tolerance
 ---
 
 "Fault tolerance" or being able to handle any type of fault in itself is a motivation for distributed systems. This is one of the most widely studied topics in the area of Distributed Systems. It has remained one of the hot areas for some obvious reasons -- If you are talking of a distributed environment of thousands of machines, it is evident that almost always, some will fail. Due to this very obvious fact, failures have become the norm rather than an exception.

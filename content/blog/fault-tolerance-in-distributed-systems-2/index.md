@@ -2,10 +2,7 @@
 title: "Fault Tolerance in Distributed Systems: Timing Models"
 date: 2014-10-29T15:04:38+08:00
 author: shantanualshi
-tags:
-  - Failure
-  - Fault Tolerance
-  - Timing Models
+tags: Failure, Fault Tolerance, Timing Models
 ---
 
 In the last post, I wrote about fault tolerance in Distributed Systems and how failure models are classified. This post will describe the timing models that need to be considered while studying fault tolerance.

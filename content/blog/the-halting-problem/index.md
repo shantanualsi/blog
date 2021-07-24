@@ -2,14 +2,7 @@
 title: The Halting Problem
 date: 2018-02-18T18:33:18+08:00
 author: shantanualshi
-tags:
-  - computers
-  - diagonalization
-  - halting
-  - loops
-  - problems
-  - turing
-  - undecidability
+tags: computers, diagonalization, halting, loops, problems, turing, undecidability
 ---
 
 ![XKCD](./halting-xkcd.png)
