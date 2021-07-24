@@ -35,4 +35,18 @@ html {
   font-weight: 500;
 }
 
+.header-wrapper .logo {
+  float: left;
+  width: 70px;
+  height: 50px;
+}
+
+.header-wrapper .main-heading {
+  position: relative;
+  padding-left: 2em;
+  font-weight: 300;
+  font-size: 40px;
+  padding-top: 2px;
+  color: #1d3557;
+}
 /* https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557 */

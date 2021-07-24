@@ -1,9 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { FacebookShareButton, FacebookIcon } from "react-share"
-import { TwitterShareButton, TwitterIcon } from "react-share"
-import { LinkedinShareButton, LinkedinIcon } from "react-share"
-import { MailruShareButton, MailruIcon } from "react-share"
 
 const Share = ({ socialConfig }) => (
   <div className="post-social">

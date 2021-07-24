@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Shantanu Alshi`,
+    title: `Shantanu's Weblog`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://www.shantanualshi.com`,
     social: {
@@ -121,7 +121,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
