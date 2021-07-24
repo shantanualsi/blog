@@ -9,6 +9,11 @@ html {
   padding-right: 10%;
 }
 
+.global-wrapper footer {
+  color: #e63946;
+  font-size: 0.7rem;
+}
+
 .main-heading {
   color: #000;
   font-weight: 700;
@@ -17,17 +22,18 @@ html {
 .post-list-item h2 {
   display: inline-block;
   color: #1d3557;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .post-list-item small {
   float: right;
+  color: #457b9d;
 }
 
 .post-list-item {
-  border-bottom: rgb(208, 208, 208) solid 0.1px;
-  padding-bottom: 2rem;
+  border-bottom: rgb(237, 237, 237) solid 0.1px;
+  font-weight: 200;
 }
 
 .blog-post h1 {
