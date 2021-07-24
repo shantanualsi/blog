@@ -2,7 +2,7 @@
 title: Logging in PySpark
 date: 2016-07-04T18:54:42+08:00
 author: shantanualshi
-tags: logging, pyspark
+tags: pyspark, howto, til
 ---
 
 Logging while writing pyspark applications is a common issue. I've come across many questions on Stack overflow where beginner Spark programmers are worried that they have tried logging using some means and it didn't work.

@@ -1,7 +1,7 @@
 ---
 title: 10 Things I Learnt From My First Manager
 date: 2014-07-12
-tags: Management, Values
+tags: values
 ---
 
 You know the cliché that first impression is the last impression. But you have been thinking this adage only in a single direction — by keeping yourself at the receiving end, and acting accordingly. If you think it the other way round; your first project is your first impression of “work” or what it is meant to be in a professional environment. And this project in turn is highly influenced by one person- The Project Manager.

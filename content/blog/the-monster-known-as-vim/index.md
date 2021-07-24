@@ -4,7 +4,7 @@ date: 2016-07-03
 categories:
   - Tutorials
   - VIM
-tags: vim
+tags: vim, howto, til
 ---
 
 In March 2017, <a href="https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/" target="_blank" rel="noopener">Stack Overflow published an article</a> that during weekdays, there are about 80 people per hour who struggle to exit out from the editor, and that's just Stack Overflow's traffic. VIM can be real daunting and unfriendly to the beginner. It mysteriously does things right when you start typing in it. Unless you press 'i' or some other special key, it just refuses to type in a new file. Some say its a good random string generator! It is this recondite nature of VIM scares tyro developers off the editor.  But once you get the hang of it, its like a jetpack right inside your keyboard.

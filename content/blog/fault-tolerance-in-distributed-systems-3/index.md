@@ -2,7 +2,7 @@
 title: "Fault Tolerance in Distributed Systems: Distributed Consensus"
 date: 2014-11-20T01:25:57+08:00
 author: shantanualshi
-tags: Fault Tolerance
+tags: distributed systems, concepts
 ---
 
 Back to writing after a while. Exam time! would try my best to stick around. Anyways, back to the topic-
