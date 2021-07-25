@@ -56,15 +56,12 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       <strong>Timing Model</strong>
     </td>
-    
     <td width="156">
       <strong>Node</strong>
     </td>
-    
     <td width="156">
       <strong>Channel</strong>
     </td>
-    
     <td width="156">
       <strong>Comment</strong>
     </td>
@@ -74,15 +71,12 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Synchronous
     </td>
-    
     <td width="156">
       Byzantine
     </td>
-    
     <td width="156">
       Drops Messages
     </td>
-    
     <td rowspan="6" width="156">
       Impossible to solve.
     </td>
@@ -92,11 +86,9 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Synchronous
     </td>
-    
     <td width="156">
       Crash
     </td>
-    
     <td width="156">
       Drops Messages
     </td>
@@ -106,11 +98,9 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Asynchronous
     </td>
-    
     <td width="156">
       Byzantine
     </td>
-    
     <td width="156">
       Drops Messages
     </td>
@@ -120,11 +110,9 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Asynchronous
     </td>
-    
     <td width="156">
       Crash
     </td>
-    
     <td width="156">
       Drops Messages
     </td>
@@ -134,11 +122,9 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Asynchronous
     </td>
-    
     <td width="156">
       Reliable
     </td>
-    
     <td width="156">
       Drops Messages
     </td>
@@ -148,11 +134,9 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Asynchronous
     </td>
-    
     <td width="156">
       Byzantine
     </td>
-    
     <td width="156">
       Reliable
     </td>
@@ -162,15 +146,12 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Asynchronous
     </td>
-    
     <td width="156">
       Crash
     </td>
-    
     <td width="156">
       Reliable
     </td>
-    
     <td width="156">
       Version 4 (Impossible to solve)
     </td>
@@ -180,15 +161,12 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Synchronous
     </td>
-    
     <td width="156">
       Reliable
     </td>
-    
     <td width="156">
       Drops Messages
     </td>
-    
     <td width="156">
        Version 2 (Impossible to solve)
     </td>
@@ -198,15 +176,12 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Synchronous
     </td>
-    
     <td width="156">
       Byzantine
-    </td>
-    
+    </td> 
     <td width="156">
       Reliable
     </td>
-    
     <td width="156">
       Version 3 (Deterministic solution for n > 3f)
     </td>
@@ -216,15 +191,12 @@ Okay, so we just now scratched the surface of the scenarios in case of distribut
     <td width="156">
       Synchronous
     </td>
-    
     <td width="156">
       Crash
-    </td>
-    
+    </td>  
     <td width="156">
       Reliable
-    </td>
-    
+    </td> 
     <td width="156">
       Version 1 (Deterministic solution)
     </td>

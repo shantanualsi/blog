@@ -36,15 +36,14 @@ So how do you speak the vim lingo? Here are some things to get started -
 The table below shows the alphabet in normal mode.
 
 <table style="border-collapse: collapse; width: 669px; height: 295px;" border="0" width="261" cellspacing="0" cellpadding="0">
-  <colgroup> <col style="width: 65pt;" span="3" width="87" /> </colgroup> <tr style="height: 16pt;">
+  <colgroup> <col style="width: 65pt;" span="3" width="87" /> </colgroup> 
+  <tr style="height: 16pt;">
     <td style="height: 16pt; width: 65pt;" width="87" height="21">
       <span style="color: #0000ff;">a: append</span>
-    </td>
-    
+    </td>  
     <td style="width: 65pt;" width="87">
       <span style="color: #993300;">j: down</span>
     </td>
-    
     <td style="width: 65pt;" width="87">
       <span style="color: #0000ff;">s: substitute character</span>
     </td>
@@ -54,11 +53,9 @@ The table below shows the alphabet in normal mode.
     <td style="height: 16pt;" height="21">
       <span style="color: #993300;">b: back</span>
     </td>
-    
     <td>
       <span style="color: #993300;">k: up</span>
     </td>
-    
     <td>
       <span style="color: #008000;">t: to / till</span>
     </td>
@@ -68,11 +65,9 @@ The table below shows the alphabet in normal mode.
     <td style="height: 16pt;" height="21">
       <span style="color: #0000ff;">c: cut </span>
     </td>
-    
     <td>
       <span style="color: #993300;">l: right</span>
     </td>
-    
     <td>
       <span style="color: #993300;">u: undo</span>
     </td>
@@ -82,11 +77,9 @@ The table below shows the alphabet in normal mode.
     <td style="height: 16pt;" height="21">
       <span style="color: #008000;">d: delete</span>
     </td>
-    
     <td>
       <span style="color: #008000;">m: mark</span>
     </td>
-    
     <td>
       <span style="color: #008000;">v: visual</span>
     </td>
@@ -95,12 +88,10 @@ The table below shows the alphabet in normal mode.
   <tr style="height: 16pt;">
     <td style="height: 16pt;" height="21">
       <span style="color: #993300;">e: end (of the word)</span>
-    </td>
-    
+    </td>  
     <td>
       <span style="color: #993300;">n: next (search)</span>
     </td>
-    
     <td>
       <span style="color: #993300;">w: word</span>
     </td>
@@ -110,11 +101,9 @@ The table below shows the alphabet in normal mode.
     <td style="height: 16pt;" height="21">
       <span style="color: #008000;">f: find</span>
     </td>
-    
     <td>
       <span style="color: #0000ff;">o: open line</span>
     </td>
-    
     <td>
       <span style="color: #993300;">x: cut (character)</span>
     </td>
@@ -124,11 +113,9 @@ The table below shows the alphabet in normal mode.
     <td style="height: 16pt;" height="21">
       <span style="color: #993300;">h: left</span>
     </td>
-    
     <td>
       <span style="color: #993300;">p: paste below</span>
     </td>
-    
     <td>
       <span style="color: #008000;">y: yank</span>
     </td>
@@ -138,11 +125,9 @@ The table below shows the alphabet in normal mode.
     <td style="height: 16pt;" height="21">
       <span style="color: #0000ff;">i: insert</span>
     </td>
-    
     <td>
       <span style="color: #008000;">r: replace</span>
     </td>
-    
     <td>
       <span style="color: #008000;">z: position line</span>
     </td>
@@ -164,11 +149,9 @@ We will divide these into four categories -
     <td width="87">
       <span style="color: #0000ff;"><strong>#</strong> </span>(Pound): Find previous occurence of word under cursor
     </td>
-    
     <td width="87">
       <span style="color: #0000ff;">*</span> (Astrix):  Find next occurence of word under cursor
     </td>
-    
     <td width="87">
       <strong><span style="color: #0000ff;">^</span></strong> (Caret): First Non-empty character in the current line
     </td>
@@ -178,11 +161,9 @@ We will divide these into four categories -
     <td>
       <span style="color: #0000ff;"><strong>>></strong></span>: Indent to Right
     </td>
-    
     <td>
       <strong><span style="color: #0000ff;"><<</span></strong>: Indent to left
-    </td>
-    
+    </td>    
     <td>
       <strong><span style="color: #0000ff;">/</span></strong>: Find in document
     </td>
@@ -191,12 +172,10 @@ We will divide these into four categories -
   <tr>
     <td>
       <span style="color: #0000ff;"><strong>$</strong></span>: End of the line
-    </td>
-    
+    </td> 
     <td>
       <strong><span style="color: #0000ff;">~</span></strong>(Tilde): Convert to uppercase
     </td>
-    
     <td>
       <strong><span style="color: #0000ff;">`</span></strong>(Backtick): Convert to lowercase
     </td>
@@ -206,11 +185,9 @@ We will divide these into four categories -
     <td>
       <span style="color: #0000ff;"><strong>[[</strong></span>: Start of the document
     </td>
-    
     <td>
       <strong><span style="color: #0000ff;">]]</span></strong>: End of the document
     </td>
-    
     <td>
       <strong><span style="color: #0000ff;">: </span></strong>(Colon): Accept a vim command
     </td>
@@ -219,12 +196,10 @@ We will divide these into four categories -
   <tr>
     <td>
       <span style="color: #0000ff;"><strong>{</strong></span>: Previous blank line
-    </td>
-    
+    </td>  
     <td>
       <strong><span style="color: #0000ff;">}</span></strong>: Next blank line
     </td>
-    
     <td>
       <span style="color: #0000ff;"><strong>.</strong></span>(Dot): Repeat last action
     </td>
